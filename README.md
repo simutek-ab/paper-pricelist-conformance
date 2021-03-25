@@ -12,6 +12,7 @@
 
 | Revision  | Datum | Av | Kommentar |
 | ------------- | ------------- | ------------- | ------------- |
+| 1.5 | 2021-03-25 | Michael Bergman | Justering kap. 5.2.24 ArticlePrice.Price avseende fasta kolumner i GKS3. |
 | 1.4 | 2020-01-20 | Michael Bergman | Flyttat dokument till GitHub. |
 | 1.3 | 2016-10-07 | Michael Bergman | Justering kap. 5.2.4. ClientId ska vara en tom sträng om prisfilen ej är kundunik. Förtydligande om WeightPerUnit. |
 | 1.2 | 2014-06-19 | Michael Bergman | Justering kap. 5.2.26 till att även omfatta transportenhet. |
@@ -162,7 +163,9 @@ Olika valutor får inte förekomma i en och samma fil.
 
 ### 5.2.24 ArticlePrice.Price 
 
-Listan måste innehålla åtminstone ett objekt. 
+Listan måste innehålla åtminstone ett objekt.
+
+I GKS3 defineras fasta priskolumner (stafflade priser) via _Papper > Leverantörer_. Av denna anledning kräver importen att alla artilkar har exakt lika många Price-element. _Scale_ och _ScaleUnit_ kommer vidare ignoreras till fördel för de gränser som finns definerade i GKS3.
 
 ### 5.2.25 ArticlePrice.Price.Amount 
 
