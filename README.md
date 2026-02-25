@@ -12,6 +12,7 @@
 
 | Revision  | Datum | Av | Kommentar |
 | ------------- | ------------- | ------------- | ------------- |
+| 1.6 | 2026-02-25 | Michael Bergman | Justering kap. 5.2.9 ArticlePrice.Thickness. Ökat tillåten tjocklek till 100000 μm.|
 | 1.5 | 2021-03-25 | Michael Bergman | Justering kap. 5.2.24 ArticlePrice.Price avseende fasta kolumner i GKS3. |
 | 1.4 | 2020-01-20 | Michael Bergman | Flyttat dokument till GitHub. |
 | 1.3 | 2016-10-07 | Michael Bergman | Justering kap. 5.2.4. ClientId ska vara en tom sträng om prisfilen ej är kundunik. Förtydligande om WeightPerUnit. |
@@ -82,7 +83,7 @@ Om angivet, ett heltalsvärde inom intervallet 1-5.
 
 ### 5.2.9 ArticlePrice.Thickness 
 
-Om angivet, ett värde mellan 10-10000. 
+Om angivet, ett värde mellan 10-100000 μm. 
 
 ### 5.2.10 ArticlePrice.Weight 
 
