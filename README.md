@@ -12,6 +12,7 @@
 
 | Revision  | Datum | Av | Kommentar |
 | ------------- | ------------- | ------------- | ------------- |
+| 1.7 | 2026-09-21 | Michael Bergman | Nytt kap. 5.2.31 ArticlePrice, unik artikel. |
 | 1.6 | 2026-02-25 | Michael Bergman | Justering kap. 5.2.9 ArticlePrice.Thickness. Ökat tillåten tjocklek till 100000 μm.|
 | 1.5 | 2021-03-25 | Michael Bergman | Justering kap. 5.2.24 ArticlePrice.Price avseende fasta kolumner i GKS3. |
 | 1.4 | 2020-01-20 | Michael Bergman | Flyttat dokument till GitHub. |
@@ -198,8 +199,14 @@ För ScaleUnit gäller samma antaganden som för kapitel 5.2.26.
 
 Om angivet, ett värde mellan 3 – 20 tecken. 
 
- 
+### 5.2.31 ArticlePrice, unik artikel
 
+Inom en prisfil bör det inte förekomma mer än en ArticlePrice med samma kombination av:
+- `ArticleDisplayname` tillsammans med `Color`
+- `Weight`
+- `Width` och `Length`
+ - `Packaging.PackagingUnit`
+ 
 ## 6 Kommunikation 
 
 Standarden omfattar ingen bestämmelse hur prisinformationsutbytet ska kommuniceras. Simutek kommer att stödja följande tillvägagångssätt: 
